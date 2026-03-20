@@ -30,8 +30,8 @@ export default function ProjectsPage() {
       <div className="max-w-6xl mx-auto mb-20">
         <motion.h2
           initial={{ opacity: 0, y: 10 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
           className="text-2xl font-bold mb-8 text-[var(--foreground)]"
         >
           Featured Projects
@@ -43,9 +43,8 @@ export default function ProjectsPage() {
               <motion.div
                 key={project.id}
                 initial={{ opacity: 0, y: 24 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-40px" }}
-                transition={{ duration: 0.5, delay: i * 0.06 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.25 + i * 0.08 }}
                 className="group bg-[var(--card)] rounded-2xl p-6 border border-[var(--card-border)] hover:border-transparent hover:shadow-xl transition-all duration-300 relative overflow-hidden flex flex-col"
               >
                 <div className="absolute inset-0 bg-gradient-to-br from-violet-500 to-purple-600 opacity-0 group-hover:opacity-[0.04] transition-opacity duration-300 rounded-2xl" />
@@ -84,7 +83,8 @@ export default function ProjectsPage() {
         <motion.h2
           initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: true, amount: 0 }}
+          transition={{ duration: 0.5 }}
           className="text-2xl font-bold mb-8 text-[var(--foreground)]"
         >
           Hackathons
@@ -97,8 +97,8 @@ export default function ProjectsPage() {
                 key={project.id}
                 initial={{ opacity: 0, y: 24 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-40px" }}
-                transition={{ duration: 0.5, delay: i * 0.06 }}
+                viewport={{ once: true, amount: 0 }}
+                transition={{ duration: 0.5, delay: i * 0.08 }}
                 className="group bg-[var(--card)] rounded-2xl p-6 border border-[var(--card-border)] hover:border-transparent hover:shadow-xl transition-all duration-300 relative overflow-hidden flex flex-col"
               >
                 <div className="absolute inset-0 bg-gradient-to-br from-amber-500 to-orange-600 opacity-0 group-hover:opacity-[0.04] transition-opacity duration-300 rounded-2xl" />

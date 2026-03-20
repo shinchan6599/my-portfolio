@@ -15,7 +15,6 @@ import {
 const QUICK_LINKS = [
   { href: "/about", title: "About", blurb: "Who I am & what I do.", icon: User, color: "from-blue-500 to-indigo-600" },
   { href: "/projects", title: "Projects & Hackathons", blurb: "College projects and wins.", icon: FolderGit2, color: "from-violet-500 to-purple-600" },
-
   { href: "/hobbies", title: "Sports & Hobbies", blurb: "Cricket, chess, running & swimming.", icon: Dumbbell, color: "from-emerald-500 to-teal-600" },
   { href: "/travel", title: "Travel", blurb: "25+ countries — tips & experiences.", icon: MapPin, color: "from-pink-500 to-rose-600" },
   { href: "/blog", title: "Blog", blurb: "Notes, chess/cricket content (coming soon).", icon: PenLine, color: "from-cyan-500 to-sky-600" },
@@ -30,9 +29,8 @@ export default function HomePage() {
       <section className="mt-20">
         <motion.h2
           initial={{ opacity: 0, y: 16 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.5 }}
           className="text-3xl font-extrabold mb-10 gradient-text"
         >
           Explore
@@ -44,9 +42,8 @@ export default function HomePage() {
               <motion.div
                 key={item.href}
                 initial={{ opacity: 0, y: 24 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-40px" }}
-                transition={{ duration: 0.5, delay: i * 0.06 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.55 + i * 0.08 }}
               >
                 <Link
                   href={item.href}

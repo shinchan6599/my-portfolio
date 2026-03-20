@@ -31,9 +31,8 @@ export default function ContactPage() {
         {/* Form */}
         <motion.div
           initial={{ opacity: 0, x: -30 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
           className="lg:col-span-3"
         >
           <form className="bg-[var(--card)] rounded-3xl p-8 border border-[var(--card-border)] space-y-6">
@@ -80,9 +79,8 @@ export default function ContactPage() {
         {/* Social Sidebar */}
         <motion.div
           initial={{ opacity: 0, x: 30 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
           className="lg:col-span-2 space-y-4"
         >
           <h2 className="text-2xl font-bold text-[var(--foreground)] mb-6">Or find me here</h2>
@@ -95,8 +93,7 @@ export default function ContactPage() {
                 target="_blank"
                 rel="noopener noreferrer"
                 initial={{ opacity: 0, y: 16 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
+                animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: i * 0.1 }}
                 className="group flex items-center gap-4 bg-[var(--card)] rounded-2xl p-5 border border-[var(--card-border)] hover:border-transparent hover:shadow-lg transition-all duration-300"
               >

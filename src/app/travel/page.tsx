@@ -30,7 +30,7 @@ export default function TravelPage() {
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-50px" }}
+              viewport={{ once: true, amount: 0 }}
               transition={{ duration: 0.5, delay: (index % 3) * 0.1 }}
               className="group relative bg-white dark:bg-slate-900 rounded-3xl overflow-hidden shadow-xl shadow-slate-200/50 dark:shadow-none border border-slate-100 dark:border-slate-800 hover:border-teal-400/50 transition-colors"
             >

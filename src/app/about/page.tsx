@@ -38,9 +38,8 @@ export default function AboutPage() {
         {/* Left Column: Tech Stack & Work */}
         <motion.div
           initial={{ opacity: 0, x: -30 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
           className="space-y-8"
         >
           <div className="flex items-center gap-4 mb-8">
@@ -68,9 +67,8 @@ export default function AboutPage() {
         {/* Right Column: Achievements & CP */}
         <motion.div
           initial={{ opacity: 0, x: 30 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
           className="space-y-8"
         >
           <div className="flex items-center gap-4 mb-8">
@@ -111,7 +109,7 @@ export default function AboutPage() {
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
+        viewport={{ once: true, amount: 0 }}
         transition={{ duration: 0.6 }}
         className="max-w-7xl mx-auto"
       >
@@ -154,7 +152,7 @@ export default function AboutPage() {
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
+        viewport={{ once: true, amount: 0 }}
         transition={{ duration: 0.6 }}
         className="max-w-7xl mx-auto mt-24"
       >

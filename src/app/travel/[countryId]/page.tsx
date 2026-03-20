@@ -77,7 +77,7 @@ export default function CountryPage({ params }: { params: Promise<{ countryId: s
               key={h.label}
               initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
+              viewport={{ once: true, amount: 0 }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
               className="bg-[var(--card)] rounded-2xl p-6 border border-[var(--card-border)] hover:shadow-lg transition-shadow"
             >

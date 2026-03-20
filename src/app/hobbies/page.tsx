@@ -64,9 +64,8 @@ export default function HobbiesPage() {
             <motion.div
               key={hobby.title}
               initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-40px" }}
-              transition={{ duration: 0.5, delay: i * 0.1 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 + i * 0.1 }}
               className="group bg-[var(--card)] rounded-3xl p-8 border border-[var(--card-border)] hover:border-transparent hover:shadow-xl transition-all duration-300 relative overflow-hidden"
             >
               <div className={`absolute inset-0 bg-gradient-to-br ${hobby.color} opacity-0 group-hover:opacity-[0.06] transition-opacity duration-300 rounded-3xl`} />
