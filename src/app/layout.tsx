@@ -1,6 +1,7 @@
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
 import "./globals.css"
+import { SpeedInsights } from '@vercel/speed-insights/next'
 
 export const metadata = {
   title: "Dhyey Bhansali — Portfolio",
@@ -15,6 +16,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Navbar />
         <main className="flex-grow">{children}</main>
         <Footer />
+        <SpeedInsights />
       </body>
     </html>
   )
