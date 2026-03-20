@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { MapPin, Utensils, Activity, Compass, Image as ImageIcon } from "lucide-react";
+import { MapPin, Utensils, Activity, Compass } from "lucide-react";
 import { destinations } from "./data";
 import Link from "next/link";
 
@@ -35,7 +35,6 @@ export default function TravelPage() {
               transition={{ duration: 0.5, delay: (index % 3) * 0.1 }}
               className="group relative bg-white dark:bg-slate-900 rounded-3xl overflow-hidden shadow-xl shadow-slate-200/50 dark:shadow-none border border-slate-100 dark:border-slate-800 hover:border-teal-400/50 transition-colors"
             >
-              {/* Image Placeholder */}
               <div className="relative h-64 w-full bg-slate-200 dark:bg-slate-800 overflow-hidden">
                 <Image
                   src={dest.image}
@@ -90,11 +89,6 @@ export default function TravelPage() {
                   </div>
                 </div>
 
-                {/* Image Upload Hint */}
-                <div className="pt-4 mt-6 border-t border-slate-100 dark:border-slate-800 flex items-center justify-center gap-2 text-xs text-slate-400">
-                  <ImageIcon className="h-4 w-4" />
-                  <span>Replace with your photos later</span>
-                </div>
               </div>
             </motion.div>
           </Link>

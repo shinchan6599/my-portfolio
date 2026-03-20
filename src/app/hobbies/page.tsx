@@ -33,7 +33,7 @@ const hobbies = [
     title: "Content Creation",
     color: "from-pink-500 to-rose-600",
     items: [
-      "Planning to create blog posts or video tutorials on chess and cricket.",
+      "Creator of the Binary Business series on LinkedIn, breaking down how real software companies scale and monetize.",
     ],
   },
 ];
