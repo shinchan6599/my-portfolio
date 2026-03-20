@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { MapPin, Utensils, Activity, Compass, Image as ImageIcon } from "lucide-react";
 import { destinations } from "./data";
 import Link from "next/link";
@@ -36,10 +37,12 @@ export default function TravelPage() {
             >
               {/* Image Placeholder */}
               <div className="relative h-64 w-full bg-slate-200 dark:bg-slate-800 overflow-hidden">
-                <img
+                <Image
                   src={dest.image}
                   alt={dest.name}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  fill
+                  className="object-cover transition-transform duration-700 group-hover:scale-110"
+                  unoptimized
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
 

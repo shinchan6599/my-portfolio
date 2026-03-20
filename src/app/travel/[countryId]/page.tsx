@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { MapPin, Utensils, Activity, ShieldCheck, Sun, Lightbulb, ArrowLeft } from "lucide-react";
 import { destinations } from "../data";
 import Link from "next/link";
@@ -39,10 +40,12 @@ export default function CountryPage({ params }: { params: Promise<{ countryId: s
         className="max-w-5xl mx-auto mb-12"
       >
         <div className="relative h-72 sm:h-96 w-full rounded-3xl overflow-hidden shadow-2xl">
-          <img
+          <Image
             src={dest.image}
             alt={dest.name}
-            className="w-full h-full object-cover"
+            fill
+            className="object-cover"
+            unoptimized
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
           <div className="absolute bottom-6 left-6 flex items-center gap-3">
