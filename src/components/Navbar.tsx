@@ -53,7 +53,7 @@ export default function Navbar() {
           <a
             href="/Dhyey Bhansali Resume.pdf"
             download
-            className="hidden sm:inline-flex items-center gap-1.5 px-4 py-2 text-xs font-semibold bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-xl shadow-md shadow-indigo-500/20 hover:shadow-lg hover:shadow-indigo-500/30 hover:-translate-y-0.5 transition-all duration-300"
+            className="inline-flex items-center gap-1.5 px-3 py-2 sm:px-4 sm:py-2 text-xs font-semibold bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-xl shadow-md shadow-indigo-500/20 hover:shadow-lg hover:shadow-indigo-500/30 hover:-translate-y-0.5 transition-all duration-300"
           >
             <Download className="h-3.5 w-3.5" />
             Resume
@@ -108,22 +108,7 @@ export default function Navbar() {
                   </Link>
                 </motion.div>
               ))}
-              {/* Mobile Resume Download */}
-              <motion.div
-                initial={{ opacity: 0, x: -12 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: NAV_LINKS.length * 0.04 }}
-              >
-                <a
-                  href="/Dhyey Bhansali Resume.pdf"
-                  download
-                  onClick={() => setIsOpen(false)}
-                  className="flex items-center gap-2 px-4 py-3 text-sm font-semibold text-indigo-500 rounded-xl hover:bg-slate-100/60 dark:hover:bg-slate-800/60 transition-all"
-                >
-                  <Download className="h-4 w-4" />
-                  Download Resume
-                </a>
-              </motion.div>
+
             </div>
           </motion.div>
         )}
