@@ -26,7 +26,7 @@ export default function HomePage() {
     <div className="max-w-6xl mx-auto px-6 py-12">
       <Hero />
 
-      <section className="mt-20">
+      <section className="mt-8">
         <motion.h2
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
