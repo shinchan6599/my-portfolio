@@ -169,7 +169,7 @@ export default function AboutPage() {
               <p className="text-sm font-semibold text-orange-500 mb-1">Ahmedabad Mirror</p>
               <h3 className="text-xl font-bold text-slate-900 dark:text-white group-hover:text-orange-500 transition-colors">Match winning performance from Dhyey Bhansali</h3>
               <p className="text-slate-600 dark:text-slate-400 mt-2 text-sm leading-relaxed">
-                Dhyey took 6 wickets in an innings to help my team reach semi finals.
+                Dhyey took 6 wickets in an innings to help his team reach semi finals.
               </p>
             </div>
           </a>
