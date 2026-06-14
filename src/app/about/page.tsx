@@ -10,6 +10,7 @@ import {
   Code2,
   Newspaper
 } from "lucide-react";
+import ChessStats from "../../components/ChessStats";
 
 export default function AboutPage() {
   return (
@@ -122,7 +123,7 @@ export default function AboutPage() {
             <Trophy className="h-8 w-8 text-indigo-200 mb-6" />
             <h3 className="text-xl font-bold mb-4">Chess Mastermind</h3>
             <ul className="text-indigo-100 text-sm space-y-2 leading-relaxed">
-              <li>• <strong>Chess.com:</strong> ~2300 ELO (@dhyey6599)</li>
+              <li>• <strong>Chess.com:</strong> Peak 2279 blitz, 2000+ across formats (@dhyey6599)</li>
               <li>• <strong>FIDE:</strong> 1516 Rapid Rating (ID: 33435650)</li>
               <li>• <strong>World Chess (FOA):</strong> 87% avg accuracy with a 65% win rate</li>
             </ul>
@@ -188,6 +189,9 @@ export default function AboutPage() {
           </a>
         </div>
       </motion.div>
+
+      {/* Live Chess.com ratings */}
+      <ChessStats />
     </div>
   );
 }

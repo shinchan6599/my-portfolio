@@ -17,7 +17,7 @@ const hobbies = [
     title: "Chess",
     color: "from-amber-500 to-orange-600",
     items: [
-      "FIDE-rated and rated 2100 on Chess.com.",
+      "FIDE-rated, with a peak blitz rating of 2279 on Chess.com.",
     ],
   },
   {

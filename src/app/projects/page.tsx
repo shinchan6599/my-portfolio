@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { ExternalLink, Github } from "lucide-react";
 import { projectsData } from "./data";
+import GitHubStats from "../../components/GitHubStats";
 
 export default function ProjectsPage() {
   const projects = projectsData.filter((p) => p.type === "project");
@@ -24,6 +25,9 @@ export default function ProjectsPage() {
           A selection of things I&apos;ve built — from IoT experiments to full-stack web apps.
         </p>
       </motion.div>
+
+      {/* Live GitHub activity */}
+      <GitHubStats />
 
       {/* Featured Projects */}
       <div className="max-w-6xl mx-auto mb-20">
