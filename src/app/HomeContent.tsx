@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Hero from "../components/Hero";
+import HomeSnapshot from "../components/HomeSnapshot";
 import {
   User,
   FolderGit2,
@@ -16,7 +17,7 @@ const QUICK_LINKS = [
   { href: "/about", title: "About", blurb: "Who I am & what I do.", icon: User, color: "from-blue-500 to-indigo-600" },
   { href: "/projects", title: "Projects & Hackathons", blurb: "College projects and wins.", icon: FolderGit2, color: "from-violet-500 to-purple-600" },
   { href: "/hobbies", title: "Sports & Hobbies", blurb: "Cricket, chess, running & swimming.", icon: Dumbbell, color: "from-emerald-500 to-teal-600" },
-  { href: "/travel", title: "Travel", blurb: "25+ countries — tips & experiences.", icon: MapPin, color: "from-pink-500 to-rose-600" },
+  { href: "/travel", title: "Travel", blurb: "24 countries — tips & experiences.", icon: MapPin, color: "from-pink-500 to-rose-600" },
   { href: "/blog", title: "Blog", blurb: "Binary Business & tech insights.", icon: PenLine, color: "from-cyan-500 to-sky-600" },
   { href: "/contact", title: "Contact", blurb: "Let's connect — coffee in Ahmedabad?", icon: MessageCircle, color: "from-fuchsia-500 to-pink-600" },
 ];
@@ -25,6 +26,8 @@ export default function HomePage() {
   return (
     <div className="max-w-6xl mx-auto px-6 py-12">
       <Hero />
+
+      <HomeSnapshot />
 
       <section className="mt-8">
         <motion.h2
