@@ -31,7 +31,7 @@ export default function OpengraphImage() {
           {siteTagline}
         </div>
         <div style={{ display: "flex", gap: 16, marginTop: 48, flexWrap: "wrap" }}>
-          {["♟ FIDE-rated chess", "🏆 ICPC AIR 41", "✈ 24 countries", "⚙ Cloud-native ML infra"].map((tag) => (
+          {["⭐ Toptal Top 3%", "🏆 ICPC AIR 41", "♟ FIDE-rated chess", "✈ 24 countries"].map((tag) => (
             <div
               key={tag}
               style={{

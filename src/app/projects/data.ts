@@ -1,5 +1,5 @@
 import React from 'react';
-import { FolderGit2, Trophy, Cpu, MonitorPlay, Smartphone } from "lucide-react";
+import { FolderGit2, Trophy, Cpu, MonitorPlay, Smartphone, BrainCircuit } from "lucide-react";
 
 export type ProjectType = "project" | "hackathon";
 
@@ -15,6 +15,15 @@ export interface Project {
 }
 
 export const projectsData: Project[] = [
+  {
+    id: "real-estate-rag",
+    title: "Real Estate Intelligence Platform (RAG)",
+    description: "A RAG-powered Q&A system over Gujarat's RERA portal. Scraped and ingested 16,878 real estate projects — 7+ GB of structured and unstructured data — into 1M+ vector embeddings, enabling context-aware querying over project registrations, compliance documents, and developer records.",
+    type: "project",
+    techStack: ["Python", "RAG", "LangChain", "Vector DB", "Web Scraping"],
+    githubUrl: "https://github.com/shinchan6599/GujRERACrawler",
+    icon: BrainCircuit,
+  },
   {
     id: "smart-shopping-system",
     title: "Smart Shopping System",

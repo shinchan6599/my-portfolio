@@ -8,7 +8,8 @@ import {
   Linkedin,
   Dumbbell,
   Code2,
-  Newspaper
+  Newspaper,
+  Award
 } from "lucide-react";
 import ChessStats from "../../components/ChessStats";
 import CodingProfiles from "../../components/CodingProfiles";
@@ -27,10 +28,10 @@ export default function AboutPage() {
           Dhyey Bhansali
         </h1>
         <p className="text-xl md:text-2xl text-slate-700 dark:text-slate-300 font-medium mb-6">
-          Senior Software Engineer &amp; Tech Lead @ Akridata
+          Senior Software Engineer @ Anyscale
         </p>
         <p className="text-lg text-slate-600 dark:text-slate-400 leading-relaxed max-w-3xl mx-auto">
-          I am a 27-year-old engineer who has spent the last 5+ years scaling cloud-native data platforms from zero to petabytes. From designing multi-tenant gateways to eliminating production OOM failures on enterprise ML workloads, I build infrastructure that scales. Beyond the screen, I am a competitive chess player, division-level cricketer, and a massive travel and adventure enthusiast.
+          I am a software engineer with 6+ years building distributed, cloud-native data platforms. I&apos;m currently at Anyscale, building sandboxed AI coding agents that scope tickets, gather context, and open PRs autonomously. Before that, six years at Akridata designing multi-tenant API gateways and high-throughput data pipelines, and eliminating production memory failures on TB-scale ML workloads. Beyond the screen, I am a competitive chess player, division-level cricketer, and a massive travel and adventure enthusiast.
         </p>
       </motion.div>
 
@@ -52,12 +53,12 @@ export default function AboutPage() {
           </div>
 
           <div className="bg-white dark:bg-slate-900 rounded-3xl p-8 shadow-sm border border-slate-100 dark:border-slate-800">
-            <h3 className="text-xl font-bold mb-4 text-slate-900 dark:text-white">Cloud-Native ML Infrastructure</h3>
+            <h3 className="text-xl font-bold mb-4 text-slate-900 dark:text-white">Backend &amp; AI Systems</h3>
             <p className="text-slate-600 dark:text-slate-400 mb-6">
-              As a Tech Lead at Akridata, I architected the company-wide authentication gateway and delivered end-to-end data-synthesis pipelines for Fortune 500 customers like Medtronic and Ford.
+              At Anyscale I build sandboxed AI coding agents that turn a single Slack message into a scoped ticket, gather context, implement the changes, and open a PR. Previously at Akridata I owned a centralized API Gateway handling 850K+ requests/day, pioneered FastAPI across 15+ microservices, and shipped an image-clustering service processing 500K+ images for Singapore&apos;s National Library Board.
             </p>
             <div className="flex flex-wrap gap-2">
-              {["Python", "FastAPI", "AWS ECS / ECR", "Kubernetes", "Celery", "PostgreSQL", "Docker", "S3"].map(tech => (
+              {["Python", "FastAPI", "Kubernetes", "AWS", "LangChain", "RAG", "Vector DBs", "PostgreSQL", "Redis", "Celery", "Docker", "Keycloak"].map(tech => (
                 <span key={tech} className="px-3 py-1 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 rounded-lg text-sm font-medium">
                   {tech}
                 </span>
@@ -77,10 +78,17 @@ export default function AboutPage() {
             <div className="bg-amber-100 dark:bg-amber-900/30 p-3 rounded-2xl text-amber-600 dark:text-amber-400">
               <Trophy className="h-6 w-6" />
             </div>
-            <h2 className="text-3xl font-bold text-slate-900 dark:text-white">Competitive Programming</h2>
+            <h2 className="text-3xl font-bold text-slate-900 dark:text-white">Achievements</h2>
           </div>
 
           <div className="bg-white dark:bg-slate-900 rounded-3xl p-8 shadow-sm border border-slate-100 dark:border-slate-800 space-y-6">
+            <div className="flex items-start gap-4">
+              <Award className="h-6 w-6 text-amber-500 shrink-0 mt-1" />
+              <div>
+                <h3 className="font-bold text-slate-900 dark:text-white text-lg">Toptal Network — Top 3% Global Talent</h3>
+                <p className="text-slate-600 dark:text-slate-400">Accepted into Toptal&apos;s top global engineering talent pool after multi-stage screening</p>
+              </div>
+            </div>
             <div className="flex items-start gap-4">
               <Code2 className="h-6 w-6 text-amber-500 shrink-0 mt-1" />
               <div>
@@ -136,7 +144,7 @@ export default function AboutPage() {
           <div className="bg-gradient-to-br from-emerald-500 to-teal-600 rounded-3xl p-8 text-white shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
             <MapPin className="h-8 w-8 text-emerald-200 mb-6" />
             <h3 className="text-xl font-bold mb-2">Global Explorer</h3>
-            <p className="text-emerald-100">Traveled to 25+ countries, chasing adrenaline sports and the best vegetarian food globally.</p>
+            <p className="text-emerald-100">Traveled to 24 countries, chasing adrenaline sports and the best vegetarian food globally.</p>
           </div>
 
           <div className="bg-gradient-to-br from-orange-500 to-red-500 rounded-3xl p-8 text-white shadow-lg transform hover:-translate-y-2 transition-transform duration-300">

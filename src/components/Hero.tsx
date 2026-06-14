@@ -7,7 +7,7 @@ import Link from "next/link";
 import { Download, Mail, Github, Linkedin, Instagram } from "lucide-react";
 
 const ROLES = [
-  "Software Engineer & Tech Lead",
+  "Senior Software Engineer @ Anyscale",
   "Competitive Programmer",
   "FIDE-rated Chess Player",
   "Traveler across 24 countries",

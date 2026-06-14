@@ -5,11 +5,11 @@ export const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL ??
   (process.env.VERCEL_PROJECT_PRODUCTION_URL
     ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
-    : "http://localhost:3000");
+    : "https://dhyey-bhansali.vercel.app");
 
 export const siteName = "Dhyey Bhansali";
 
-export const siteTagline = "Software Engineer & Competitive Programmer";
+export const siteTagline = "Senior Software Engineer & Competitive Programmer";
 
 export const siteDescription =
-  "Personal website of Dhyey Bhansali — software engineer and tech lead, competitive programmer, chess player, and traveler across 24 countries.";
+  "Personal website of Dhyey Bhansali — senior software engineer at Anyscale building AI systems, competitive programmer, chess player, and traveler across 24 countries.";

@@ -4,7 +4,7 @@ import AboutContent from "./AboutContent";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Senior Software Engineer & Tech Lead at Akridata scaling cloud-native ML data platforms. ICPC All-India Rank 41, FIDE-rated chess player, and traveler.",
+    "Senior Software Engineer at Anyscale building AI coding agents. 6+ years across distributed data platforms, Toptal Top 3%, ICPC All-India Rank 41, FIDE-rated chess player, and traveler.",
   alternates: { canonical: "/about" },
 };
 
