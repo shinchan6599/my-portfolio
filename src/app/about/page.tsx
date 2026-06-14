@@ -11,6 +11,7 @@ import {
   Newspaper
 } from "lucide-react";
 import ChessStats from "../../components/ChessStats";
+import CodingProfiles from "../../components/CodingProfiles";
 
 export default function AboutPage() {
   return (
@@ -105,6 +106,9 @@ export default function AboutPage() {
         </motion.div>
 
       </div>
+
+      {/* Live competitive-programming ratings */}
+      <CodingProfiles />
 
       {/* Beyond the Keyboard */}
       <motion.div
