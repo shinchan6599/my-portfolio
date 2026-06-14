@@ -48,6 +48,28 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Visible keyboard-focus indicator for accessibility */
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Respect users who prefer reduced motion: neutralise CSS animations and
+   transitions (Framer Motion is handled separately via MotionConfig). */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
@@ -107,6 +129,13 @@ body {
     background: rgba(15, 23, 42, 0.7);
     border: 1px solid rgba(255, 255, 255, 0.08);
   }
+}
+
+/* Class-based dark theme (next-themes toggle) — keep glass correct when the
+   chosen theme differs from the OS preference. */
+.dark .glass {
+  background: rgba(15, 23, 42, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 /* Gradient text utility */
