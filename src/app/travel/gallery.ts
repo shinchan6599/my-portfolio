@@ -39,7 +39,7 @@ export const countryGallery: Record<string, GalleryMedia[]> = {
     { src: "/Netherlands/IMG_1919.jpg", type: "image" },
     { src: "/Netherlands/IMG_2561.jpg", type: "image" },
     { src: "/Netherlands/IMG_5874.jpg", type: "image" },
-    { src: "/Netherlands/IMG_5869.MOV", type: "video" },
+    { src: "/Netherlands/IMG_5869.mp4", type: "video" },
   ],
   norway: [
     { src: "/Norway/068DE54F-F681-45A5-B1BD-49B80FA480C3.JPG", type: "image" },
@@ -84,7 +84,7 @@ export const countryGallery: Record<string, GalleryMedia[]> = {
     { src: "/Switzerland/IMG_1862.jpg", type: "image" },
     { src: "/Switzerland/IMG_1951.jpg", type: "image" },
     { src: "/Switzerland/IMG_6078.jpg", type: "image" },
-    { src: "/Switzerland/IMG_1602.MOV", type: "video" },
+    { src: "/Switzerland/IMG_1602.mp4", type: "video" },
   ],
   turkey: [
     { src: "/Turkey/IMG_9089.jpg", type: "image" },
@@ -150,6 +150,6 @@ export const countryGallery: Record<string, GalleryMedia[]> = {
     { src: "/Vietnam/IMG_4509.jpg", type: "image" },
     { src: "/Vietnam/IMG_4515.jpg", type: "image" },
     { src: "/Vietnam/IMG_4646.jpg", type: "image" },
-    { src: "/Vietnam/IMG_3971.MOV", type: "video" },
+    { src: "/Vietnam/IMG_3971.mp4", type: "video" },
   ],
 };
