@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { MapPin, Utensils, Activity, ShieldCheck, Sun, Lightbulb, ArrowLeft, Camera, X, ChevronLeft, ChevronRight, Play } from "lucide-react";
@@ -15,6 +15,24 @@ export default function CountryPage({ params }: { params: Promise<{ countryId: s
   const dest = destinations.find((d) => d.id === countryId);
   const gallery = countryGallery[countryId] || [];
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
+
+  // Keyboard navigation + scroll lock while the lightbox is open.
+  useEffect(() => {
+    if (lightboxIndex === null) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setLightboxIndex(null);
+      else if (e.key === "ArrowLeft")
+        setLightboxIndex((i) => (i !== null ? (i - 1 + gallery.length) % gallery.length : null));
+      else if (e.key === "ArrowRight")
+        setLightboxIndex((i) => (i !== null ? (i + 1) % gallery.length : null));
+    };
+    window.addEventListener("keydown", onKey);
+    document.body.style.overflow = "hidden";
+    return () => {
+      window.removeEventListener("keydown", onKey);
+      document.body.style.overflow = "";
+    };
+  }, [lightboxIndex, gallery.length]);
 
   if (!dest) return notFound();
 

@@ -17,6 +17,43 @@ export interface Destination {
   };
 }
 
+export type Continent = "Europe" | "Asia" | "Africa" | "North America";
+
+// Continent for each destination id — used for filtering, grouping and the map.
+export const CONTINENT_OF: Record<string, Continent> = {
+  turkey: "Asia",
+  switzerland: "Europe",
+  norway: "Europe",
+  italy: "Europe",
+  maldives: "Asia",
+  usa: "North America",
+  uk: "Europe",
+  vietnam: "Asia",
+  "south-africa": "Africa",
+  france: "Europe",
+  greece: "Europe",
+  belgium: "Europe",
+  netherlands: "Europe",
+  sweden: "Europe",
+  uae: "Asia",
+  "sri-lanka": "Asia",
+  vatican: "Europe",
+  thailand: "Asia",
+  malaysia: "Asia",
+  singapore: "Asia",
+  canada: "North America",
+  qatar: "Asia",
+  nepal: "Asia",
+  germany: "Europe",
+};
+
+// Display order for continents (most-visited first).
+export const CONTINENT_ORDER: Continent[] = ["Europe", "Asia", "North America", "Africa"];
+
+// Countries where the card image is one of my own photos (local path),
+// as opposed to a stock placeholder (remote URL).
+export const hasOwnPhotos = (d: Destination): boolean => d.image.startsWith("/");
+
 export const destinations: Destination[] = [
   // ─── Countries with my own photos (first) ───────────────────────
   {
